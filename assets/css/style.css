@@ -1,0 +1,214 @@
+/**
+ * @file style.css
+ * @brief Hoja de estilos principal para el sistema Tienda Dulce Hogar.
+ * 
+ * Contiene el diseño general del sitio, incluyendo estilos para formularios,
+ * navegación, productos, tablas y botones. 
+ * 
+ * @author Francesca Olivares Aqueveque
+ * @date 2025-05-03
+ */
+
+/* ===========================
+   General
+   =========================== */
+
+/**
+ * @section Estilo general
+ * Define el estilo base del body y títulos.
+ */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/**
+ * @section Botones
+ * Estilo base y hover para botones.
+ */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/**
+ * @section Contenedor principal
+ */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ===========================
+   Catálogo de productos
+   =========================== */
+
+/**
+ * @section Catálogo
+ * Define el diseño del contenedor de productos.
+ */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/**
+ * @section Producto
+ * Estilo individual para cada tarjeta de producto.
+ */
+.producto {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+/* ===========================
+   Tablas
+   =========================== */
+
+/**
+ * @section Tablas
+ * Estilo base para las tablas de pedidos o reportes.
+ */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* ===========================
+   Formularios
+   =========================== */
+
+/**
+ * @section Formularios
+ * Estilo de los formularios y campos de entrada.
+ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* ===========================
+   Barra de navegación
+   =========================== */
+
+/**
+ * @section Navbar
+ * Estilo para la barra de navegación y enlaces.
+ */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/**
+ * @section Menú de usuario
+ * Estilos para la sesión y logout.
+ */
+.menu-usuario {
+    float: right;
+    margin-top: -40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.menu-usuario span {
+    font-weight: bold;
+}
+
+.menu-usuario a {
+    text-decoration: none;
+    color: #333;
+    background-color: #eee;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-usuario a:hover {
+    background-color: #ccc;
+}
+
+.btn-logout {
+    background-color: #e74c3c !important;
+    color: white !important;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b !important;
+}

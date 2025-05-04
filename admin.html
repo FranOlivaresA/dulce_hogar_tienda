@@ -1,0 +1,41 @@
+<!--
+@file: admin.html
+@brief Página de administración para el sistema Tienda Dulce Hogar.
+@details
+Esta página permite a los administradores gestionar productos y pedidos en el sistema.
+@note
+Los enlaces de navegación permiten a los administradores acceder a las secciones de gestión de productos y pedidos.
+@note
+Los administradores deben iniciar sesión para acceder a esta página.
+@author Francesca Olivares Aqueveque
+@date 2025-05-03
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="catalogo.php">Catálogo</a>
+        <a href="carrito.php">Carrito</a>
+        <a href="php/logout.php">Cerrar sesión</a>
+    </header>
+
+    <h1>Panel de Administración</h1>
+    
+    <section>
+        <h2>Gestión de Productos</h2>
+        <a href="admin/productos.php">Agregar Producto</a>
+        <a href="admin/editar_productos.php">Editar Productos</a>
+        <a href="admin/eliminar_productos.php">Eliminar Productos</a>
+    </section>
+
+    <section>
+        <h2>Gestión de Pedidos</h2>
+        <a href="admin/pedidos.php">Ver Pedidos</a>
+    </section>
+</body>
+</html>

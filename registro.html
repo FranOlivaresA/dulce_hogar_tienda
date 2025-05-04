@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--
+   * @file registro.html
+   * @brief Página de registro de usuario para el sistema Tienda Dulce Hogar.
+   *
+   * Esta página contiene un formulario que permite a los usuarios registrarse en el sistema.
+   * Los usuarios deben ingresar su nombre, correo electrónico y una contraseña para completar el registro.
+   *
+   * @details
+   * El formulario envía los datos a la página "registro_usuario.php" para procesar el registro.
+    * Se valida que todos los campos sean obligatorios y se proporciona un mensaje de error si alguno de ellos está vacío.
+    * @author Francesca Olivares Aqueveque
+    * @date 03-05-2025
+   */
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!--
+   * @section formulario_registro
+   * @brief Formulario de registro de usuario.
+   *
+   * Este formulario permite a los usuarios registrarse introduciendo su nombre, correo electrónico y una contraseña.
+   * El formulario realiza la validación básica de los campos.
+   *
+   * @note
+   * Los datos se envían a la página "php/registro_usuario.php" mediante el método POST.
+   */
+  <h2>Registro de Usuario</h2>
+  <form action="php/registro_usuario.php" method="POST">
+    <!--
+     * @section nombre_usuario
+     * @brief Campo para el nombre del usuario.
+     *
+     * Este campo permite al usuario introducir su nombre.
+     * Es un campo obligatorio que debe completarse para proceder con el registro.
+     -->
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <!--
+     * @section email_usuario
+     * @brief Campo para el correo electrónico del usuario.
+     *
+     * Este campo permite al usuario introducir su dirección de correo electrónico.
+     * Se valida que el correo sea una dirección válida y es obligatorio para completar el registro.
+     -->
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <!--
+     * @section password_usuario
+     * @brief Campo para la contraseña del usuario.
+     *
+     * Este campo permite al usuario introducir una contraseña.
+     * Es obligatorio y se realiza una validación para asegurarse de que el campo no esté vacío.
+     -->
+    <label>Contraseña:</label>
+    <input type="password" name="password" required>
+
+    <!--
+     * @section boton_registro
+     * @brief Botón de envío del formulario.
+     *
+     * Este botón envía los datos del formulario a la página de procesamiento en el backend para su registro.
+     */
+    <button type="submit">Registrarse</button>
+  </form>
+</body>
+</html>
